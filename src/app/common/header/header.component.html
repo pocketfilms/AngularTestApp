@@ -13,11 +13,14 @@
             <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle">
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Dashboard</a>
-            <a class="dropdown-item" href="#">Edit Profile</a>
+            <a class="dropdown-item" href="/dashboard/home">Home</a>
+            <a class="dropdown-item" href="/dashboard/analytics">Analytics</a>
+            <a class="dropdown-item" href="/dashboard/reports">Reports</a>
             <a class="dropdown-item" href="/login">Log In</a>
           </div>
         </li>
       </ul>
     </div>
   </nav>
+
+  <router-outlet></router-outlet>
