@@ -6,7 +6,6 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 // import { HeaderComponent } from './common/header/header.component';
-import { HeaderModule } from './common/header/header.module';
 import { LoginComponent } from './auth/login/login.component';
 
 @NgModule({
@@ -18,8 +17,7 @@ import { LoginComponent } from './auth/login/login.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
-    HeaderModule
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

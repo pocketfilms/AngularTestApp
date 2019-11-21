@@ -5,18 +5,17 @@ import { HeaderComponent } from './common/header/header.component';
 
 
 
-import { HeaderModule } from './common/header/header.module';
 
 
 
 const routes: Routes = [
   {path: 'login',  component: LoginComponent},
-  {path: '', redirectTo: '/dashboard', pathMatch: "full"}
+  {path: '', redirectTo: '/dashboard', pathMatch: "full"},
+  {path: 'dashboard', loadChildren: './common/header/header.module#HeaderModule' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes),
-            HeaderModule],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
